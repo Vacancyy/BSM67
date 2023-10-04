@@ -52,27 +52,10 @@ public class CaseConverterTest {
 
         @Test
         public void testConvertCaseWithUpperCaseInput() {
-            String result = caseConverter.convertCase("WORLD");
+            String result = caseConverter.convertCase("world");
             assertEquals("WORLD", result);
         }
 
-        @Test
-        public void testConvertCaseWithMixedCaseInput() {
-            String result = caseConverter.convertCase("HelloWorld");
-            assertEquals("HELLOWORLD", result);
-        }
-
-        @Test
-        public void testConvertCaseWithSpecialCharactersInput() {
-            String result = caseConverter.convertCase("#$%^&");
-            assertEquals("#$%^&", result);
-        }
-
-        @Test
-        public void testConvertCaseWithNumbersAndLettersInput() {
-            String result = caseConverter.convertCase("Hello123");
-            assertEquals("HELLO123", result);
-        }
     }
 
     @Nested

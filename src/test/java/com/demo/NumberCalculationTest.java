@@ -48,7 +48,7 @@ public class NumberCalculationTest {
 	
 	@Test
 	void testDividewithException() {
-		assertThrows(ArithmeticException.class, () -> nc.divide(1, 1), "denominator should not be zero");
+		assertThrows(ArithmeticException.class, () -> nc.divide(1, 0), "denominator should not be zero");
 	}
 	
 	@Test
